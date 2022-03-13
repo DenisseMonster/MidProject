@@ -16,3 +16,9 @@ def avflipper():
 
 def avbody():
     return requests.get(url+"/penguins/avbody/mass").json()
+
+def species():
+    return requests.get(url+"/species/").json()  
+
+def islands():
+    return requests.get(url+"/islands").json()                
