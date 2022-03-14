@@ -23,20 +23,3 @@ def compare_species():
             continue
         second.append(especie2[especie])
 
-
-"""    player_one_data = []
-    player_two_data = []
-    labels = ['Goals Scored', 'Assistance', 'Yellow Cards', 'Red Cards']
-    for player_data in get_player(player1):
-        if player_data == 'name':
-            continue
-        player_one_data.append(get_player(player1)[player_data])
-    
-    for player_data in get_player(player2):
-        if player_data == 'name':
-            continue
-        player_two_data.append(get_player(player2)[player_data])
-
-    x = np.arange(len(labels))  
-    width = 0.35  
-"""
