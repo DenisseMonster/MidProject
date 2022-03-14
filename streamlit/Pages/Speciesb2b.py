@@ -6,21 +6,37 @@ import numpy as np
 
 def compare_species():
     st.title("Compare the Species average!")
-    Species = species()
+    Species = species(specie)
     especie1 = st.selectbox("Please chose an specie",Species)
     especie2 = st.selectbox("Please chose a second specie",Species)
 
     first = []
     second = []
     speciesdata = ["avculmen", "avflipper","avlenght"]
-    for especie in species():
+    for especie in species(especie1):
         if especie == "Species":
             continue
         first.append(especie1[especie])
 
-    for especie in species():
+    for especie in species(especie2):
         if especie == "Species":
             continue
         second.append(especie2[especie])
 
 
+"""    player_one_data = []
+    player_two_data = []
+    labels = ['Goals Scored', 'Assistance', 'Yellow Cards', 'Red Cards']
+    for player_data in get_player(player1):
+        if player_data == 'name':
+            continue
+        player_one_data.append(get_player(player1)[player_data])
+    
+    for player_data in get_player(player2):
+        if player_data == 'name':
+            continue
+        player_two_data.append(get_player(player2)[player_data])
+
+    x = np.arange(len(labels))  
+    width = 0.35  
+"""

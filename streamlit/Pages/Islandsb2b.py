@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-def compare_species():
+def compare_island():
     st.title("Compare the Species average!")
     Islands = islands()
     isla1 = st.selectbox("Please chose an specie",Islands)

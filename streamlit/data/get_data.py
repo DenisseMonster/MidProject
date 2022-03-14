@@ -2,7 +2,7 @@ import requests
 
 url = "http://127.0.0.1:8000"
 
-def islandpop():
+def islandpop(i):
     return requests.get(url+"/penguins/islandpop").json()
 
 def avculmen():
@@ -20,5 +20,5 @@ def avbody():
 def species():
     return requests.get(url+"/species/").json()  
 
-def islands():
+def islands(i):
     return requests.get(url+"/islands").json()                
