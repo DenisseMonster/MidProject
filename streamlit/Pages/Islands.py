@@ -3,7 +3,6 @@ from data.get_data import islandpop, avculmen, avdepth, avflipper, avbody,island
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+import geopandas as gdf
 
-sland = [islands(i) for i in range (1)]
-
-st.text(sland)
+gdf.plot("area", legend=True)
